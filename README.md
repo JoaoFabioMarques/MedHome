@@ -9,7 +9,6 @@ Tecnologias utilizadas:
 Front - End:
 
 -React Native com Expo
--Moti
 
 Back - End:
 

@@ -1,4 +1,5 @@
 import { useFonts } from "expo-font";
+import { useRouter } from "expo-router";
 import { JSX, useState } from "react";
 import {
   Dimensions,
@@ -16,6 +17,7 @@ const scale: number = width / 390;
 const normalize = (size: number): number => Math.round(size * scale);
 
 export default function Login(): JSX.Element {
+  const router = useRouter();
   const [fontsLoaded] = useFonts({
     "Rajdhani-SemiBold": require("@/assets/fonts/Rajdhani-SemiBold.ttf"),
   });
@@ -102,7 +104,10 @@ export default function Login(): JSX.Element {
       </View>
 
       <View style={styles.registerWrapper}>
-        <TouchableOpacity style={styles.actionButton}>
+        <TouchableOpacity
+          style={styles.actionButton}
+          onPress={() => router.push("/frontend/home")}
+        >
           <Text style={styles.actionButtonText}>Acessar</Text>
         </TouchableOpacity>
         <View style={styles.registerBottomGroup}>
@@ -112,7 +117,10 @@ export default function Login(): JSX.Element {
         </View>
         <View style={styles.registerBottomGroup}>
           <Text style={styles.registerQuestion}>Não possui cadastro?</Text>
-          <TouchableOpacity style={styles.actionButton}>
+          <TouchableOpacity
+            style={styles.actionButton}
+            onPress={() => router.push("/frontend/cadastro")}
+          >
             <Text style={styles.actionButtonText}>Cadastrar-se</Text>
           </TouchableOpacity>
         </View>
