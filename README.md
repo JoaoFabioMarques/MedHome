@@ -1,56 +1,33 @@
-# Welcome to your Expo app 👋
+MedHome: um aplicativo feito para controlar de modo digital a sua saúde.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ainda em fase de desenvolvimento, o projeto consiste em um assistente para cuidar do usuário agindo como lembrete de ingestão de medicações e indicador de como anda a saúde física do usuário com base em métricas registradas
+no próprio aplicativo, tais como registros de glicemia, pressão arterial, ciclo menstrual(para as mulheres) e etc, assim ajudando o usuário a ter maior controle sob sua saúde física, lembrando que o projeto não substitui
+orientações oficiais de um médico devidamente qualificado, sendo apenas uma ajuda secundária.
 
-## Get started
+Tecnologias utilizadas:
 
-1. Install dependencies
+Front - End:
 
-   ```bash
-   npm install
-   ```
+-React Native com Expo
 
-2. Start the app
+Back - End:
 
-   ```bash
-   npx expo start
-   ```
+-Em Progresso
 
-In the output, you'll find options to open the app in a
+Como rodar o projeto localmente:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1: Instale o Node.JS e coloque no terminal:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+git clone https://github.com/JoaoFabioMarques/MedHome/
 
-## Get a fresh project
+2: instale o Expo Go no seu dispositivo Android ou iOS
 
-When you're ready, run:
+Android: https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR
 
-```bash
-npm run reset-project
-```
+iOS: https://apps.apple.com/br/app/expo-go/id982107779
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3: abra o terminal com a pasta do projeto aberta no editor de código e digite o comando:
 
-### Other setup steps
+npx expo start
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4: com o Expo Go aberto, clique em "Scan QR" e escaneie o QR code gerado no terminal.
