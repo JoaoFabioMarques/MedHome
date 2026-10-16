@@ -20,12 +20,12 @@ const normalize = (size: number): number => Math.round(size * scale);
 const USERNAME = "Usuário";
 
 const GRID_ITEMS = [
-  { id: 1, label: "Horários de\nMedicações" },
-  { id: 2, label: "Indicador\nde Saúde" },
-  { id: 3, label: "Glicemia" },
-  { id: 4, label: "Pressão\nArterial" },
-  { id: 5, label: "Ciclo\nMenstrual" },
-  { id: 6, label: "WIP" },
+  { id: 1, emoji: "⏰", label: "Horários de\nMedicações" },
+  { id: 2, emoji: "📊", label: "Indicador\nde Saúde" },
+  { id: 3, emoji: "🍬", label: "Glicemia" },
+  { id: 4, emoji: "🧂", label: "Pressão\nArterial" },
+  { id: 5, emoji: "🩸", label: "Ciclo\nMenstrual" },
+  { id: 6, emoji: "🛏️", label: "Qualidade\ndo Sono" },
 ];
 
 export default function Home(): JSX.Element {
@@ -75,6 +75,7 @@ export default function Home(): JSX.Element {
             style={styles.gridItem}
             activeOpacity={0.8}
           >
+            <Text style={styles.gridItemEmoji}>{item.emoji}</Text>
             <Text style={styles.gridItemText}>{item.label}</Text>
           </TouchableOpacity>
         ))}
@@ -197,6 +198,11 @@ const styles = StyleSheet.create({
     fontSize: normalize(16),
     color: "#000",
     textAlign: "center",
+  },
+
+  gridItemEmoji: {
+    fontSize: normalize(36),
+    marginBottom: normalize(6),
   },
   modalOverlay: {
     flex: 1,

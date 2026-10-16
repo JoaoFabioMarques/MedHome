@@ -7,9 +7,6 @@
     "icon": "./src/assets/icons/mh-icon.png",
     "scheme": "medhome",
     "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": ".src/assets/expo.icon"
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icons/mh-adaptive-icon.png",
@@ -19,16 +16,17 @@
     },
     "web": {
       "output": "static",
-      "favicon": ".src/assets/images/favicon.png"
+      "favicon": "/assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#FDFDFD",
+          "image": "./src/assets/icons/mh-icon.png",
+          "imageWidth": 120,
+          "resizeMode": "contain"
         }
       ]
     ],
